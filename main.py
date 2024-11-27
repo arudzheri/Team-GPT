@@ -11,14 +11,15 @@ def main():
     summarizer = SummarizerAgent()
     sentiment_analyzer = SentimentAgent()
     
-    # Step 1: Summarize the text
+    # Summarize the text
     summary = summarizer.summarize(text_data)
     print(f"Summary:\n{summary}")
     
-    # Step 2: Analyze sentiment of the summary
+    # Analyze sentiment of the summary
     sentiment = sentiment_analyzer.analyze_sentiment(summary)
     print(f"Sentiment Analysis:\n{sentiment}")
 
 if __name__ == "__main__":
     main()
+
 
